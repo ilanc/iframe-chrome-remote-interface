@@ -12,8 +12,17 @@ How do we implement this functionality using `chrome-remote-interface`
 ## Install
 
 ```bash
-apt-get update && apt-get install -y python python-pip
-pip install selenium
+# python & pip
+sudo apt-get update && apt-get install -y python python-pip
+# selenium
+sudo pip install selenium
+# chromedriver
+CHROMEDRIVER_VERSION=2.30
+curl -SLO "https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip" \
+  && sudo unzip "chromedriver_linux64.zip" -d /usr/local/bin \
+  && rm "chromedriver_linux64.zip"
+# chrome
+# need chrome or chromium installed
 ```
 
 ## Run
