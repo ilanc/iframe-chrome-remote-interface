@@ -19,7 +19,7 @@ opts.add_experimental_option("prefs", prefs)
 opts.add_argument('--no-sandbox')
 browser = webdriver.Chrome(chrome_options=opts, executable_path=".\\chromedriver.exe", service_args=["--verbose", "--log-path=iframe.log"])
 browser.implicitly_wait(10)
-browser.get('https://ilanc.github.io/iframe.html')
+browser.get('https://ilanc.github.io/iframe-chrome-remote-interface/iframe.html')
 browser.switch_to_default_content()
 mainFrame = browser.find_element_by_name('frameMain')
 browser.switch_to_frame(mainFrame) # How do they do this?

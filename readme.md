@@ -22,4 +22,4 @@ python iframe.py
 ```
 NOTES:
 * runs on windows atm with `chromedriver.exe` included. Download other version [here](https://sites.google.com/a/chromium.org/chromedriver/downloads)
-* accesses the `iframe.html` - currently hosted [here](https://ilanc.github.io/iframe.html)
+* accesses the `iframe.html` - currently hosted [here](https://ilanc.github.io/iframe-chrome-remote-interface/iframe.html)
